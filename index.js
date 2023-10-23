@@ -109,20 +109,6 @@ function getFloat() {
   var i = Number(getElementById("inputFloat").value);
   arrayFloat.push(i), (getElementById("txtArrayFloat").innerHTML = arrayFloat);
 }
-// function findInt() {
-//   let arr1 = numArray;
-//   let arr2 = arrayFloat;
-//   let arrCombine = numArray + arrayFloat;
-//   for (var i = 0, index = 0; index < arrCombine.length; index++)
-//     Number.isInteger(arrCombine[index]) && i++;
-//   getElementById("txtInt").innerHTML = "Số nguyên: " + index;
-// }
-
-// var arrayFloat = [];
-// function getFloat() {
-//   var i = Number(getElementById("inputFloat").value);
-//   arrayFloat.push(i), (getElementById("txtArrayFloat").innerHTML = arrayFloat);
-// }
 function findInt() {
   for (var i = 0, r = 0; r < arrayFloat.length; r++)
     Number.isInteger(arrayFloat[r]) && i++;
@@ -140,21 +126,6 @@ function compareNum() {
       ? "Số lượng số âm > Số lượng số dương"
       : "Số lượng số dương = Số lượng số âm";
 }
-
-// document.addEventListener(
-//   "contextmenu",
-//   function (i) {
-//     i.preventDefault();
-//   },
-//   !1
-// ),
-//   (document.onkeydown = function (i) {
-//     return (
-//       123 != (i = i || window.event).keyCode &&
-//       (!n.ctrlKey || !n.shiftKey || 73 != n.keyCode) &&
-//       void 0
-//     );
-//   });
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
